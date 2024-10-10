@@ -14,7 +14,7 @@ header {
     text-align: center;
     text-decoration: underline;
     width: 100%;
-    min-width: 900px;
+    min-width: 650px;
     height: 5rem;
     align-content: center;
     background-color: #14213d;
@@ -38,26 +38,27 @@ body {
 #main-div {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
+    margin-left: 0rem;
+    margin: auto;
+    margin-top: 0.5rem;
     height: 25rem;
     padding-inline: 2rem;
     border: 5px solid #fca311;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    width: 45rem;
-    min-width: 650px;
+    width: 75%;
+    min-width: 575px;
     background: linear-gradient(90deg, #14213d 0%,#14213d 100%);;
 }
+
 
 #creator {
     display: flex;
     width: 98%;
     border: 2px solid black;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 5.5rem;
 }
 
 #create-btn {
@@ -67,14 +68,14 @@ body {
 
 #input-cont {
    width: 100%;
-   height: 1.3rem;
+   height: 1rem;
    border-color: #14213d;
 }
 
 #task-list {
-    width: 95%;
+    width: 90%;
     border: 3px solid;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0px;
     height: 30rem;
 }
@@ -118,10 +119,13 @@ body {
     color: #fca311;
     width: 25rem;
     margin-bottom: 1rem;
+    margin-top: 0px;
+    padding: 3px;
     justify-content: space-evenly;
     font-size: 1rem;
     font-weight: bolder;
     border-radius: 10px;
+    height: 3rem;
 
 }
 
@@ -130,7 +134,7 @@ body {
   border-color: #ffffff;
   #total, #Completed, #incomplete {
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.5rem;
     text-decoration: solid;
   }
 }
