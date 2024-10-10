@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mi lista</h1>
+    </header>
+    <main id="main-div">
+        <div id="creator">
+            <input type="text" id="input-cont" value="Ingresar nueva tarea...">
+            <button id="create-btn">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+        </div>
+        <ul id="task-list">
+            <li class="tarea">
+                <button class="delete-task-btn">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+                <p id="task-desc">
+                    Entrenar a las sanguijuelas: Asegurarse de que estén listas para cualquier sesión de sanguijueloterapia.
+                </p>
+                <button class="complete-task-btn">
+                    <label class="checkbox-btn">
+                        <label for="checkbox"></label>
+                        <input id="checkbox" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </button>
+            </li>
+            <li class="tarea">
+                <button class="delete-task-btn">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+                <p id="task-desc">
+                    Practicar con la guillotina: Afinar la cuchilla para mantenerla en óptimas condiciones.
+                </p>
+                <button class="complete-task-btn">
+                    <label class="checkbox-btn">
+                        <label for="checkbox"></label>
+                        <input id="checkbox" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </button>
+            </li>
+            <li class="tarea-completa">
+                <button class="delete-task-btn">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+                <p id="task-desc">
+                    Pulir el ataúd de la abuela: Mantenerlo brillante y reluciente para las siestas de la tarde.
+                </p>
+                <button class="completed-task-btn">
+                    <label class="checkbox-btn">
+                        <label for="checkbox"></label>
+                        <input id="checkbox" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </button>
+            </li>
+            <li class="tarea-completa">
+                <button class="delete-task-btn">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+                <p id="task-desc">
+                    Decorar el cementerio: Agregar nuevas lápidas, esculturas o plantas venenosas.
+                </p>
+                <button class="completed-task-btn">
+                    <label class="checkbox-btn">
+                        <label for="checkbox"></label>
+                        <input id="checkbox" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </button>
+            </li>
+        </ul>
+        <div id="stadistics-counters">
+            <div id="total">
+                <p id="p-total">Total: 4</p>
+            </div>
+            <div id="Completed">
+                <p id="Completed-total">Completed: 2</p>
+            </div>
+            <div id="incomplete">
+                <p id="incomplete-total">Incomplete: 2</p>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
