@@ -18,18 +18,24 @@
     </header>
     <main id="main-div">
         <div id="creator">
-            <input type="text" id="input-cont" value="Ingresar nueva tarea...">
+            <input type="text" id="input-cont" placeholder="Ingresar nueva tarea..." >
             <button id="create-btn">
-                <ion-icon name="add-circle-outline"></ion-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                  
             </button>
         </div>
         <ul id="task-list">
-            <li class="tarea">
-                <button class="delete-task-btn">
-                    <ion-icon name="trash"></ion-icon>
+            <!-- <li class="tarea">
+                <button id="delete-task-btn" class="delete-task-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+
                 </button>
                 <p id="task-desc">
-                    Entrenar a las sanguijuelas: Asegurarse de que estén listas para cualquier sesión de sanguijueloterapia.
+                    EJEMPLO
                 </p>
                 <button class="complete-task-btn">
                     <label class="checkbox-btn">
@@ -38,52 +44,7 @@
                         <span class="checkmark"></span>
                     </label>
                 </button>
-            </li>
-            <li class="tarea">
-                <button class="delete-task-btn">
-                    <ion-icon name="trash"></ion-icon>
-                </button>
-                <p id="task-desc">
-                    Practicar con la guillotina: Afinar la cuchilla para mantenerla en óptimas condiciones.
-                </p>
-                <button class="complete-task-btn">
-                    <label class="checkbox-btn">
-                        <label for="checkbox"></label>
-                        <input id="checkbox" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </button>
-            </li>
-            <li class="tarea-completa">
-                <button class="delete-task-btn">
-                    <ion-icon name="trash"></ion-icon>
-                </button>
-                <p id="task-desc">
-                    Pulir el ataúd de la abuela: Mantenerlo brillante y reluciente para las siestas de la tarde.
-                </p>
-                <button class="completed-task-btn">
-                    <label class="checkbox-btn">
-                        <label for="checkbox"></label>
-                        <input id="checkbox" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </button>
-            </li>
-            <li class="tarea-completa">
-                <button class="delete-task-btn">
-                    <ion-icon name="trash"></ion-icon>
-                </button>
-                <p id="task-desc">
-                    Decorar el cementerio: Agregar nuevas lápidas, esculturas o plantas venenosas.
-                </p>
-                <button class="completed-task-btn">
-                    <label class="checkbox-btn">
-                        <label for="checkbox"></label>
-                        <input id="checkbox" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </button>
-            </li>
+            </li> -->
         </ul>
         <div id="stadistics-counters">
             <div id="total">
@@ -97,7 +58,8 @@
             </div>
         </div>
     </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script src="script.js"></script>
 </body>
 </html>
