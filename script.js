@@ -9,8 +9,8 @@ const incompleteTasksCount = document.getElementById('incomplete-total');
 
 // nueva
 function addTask() {
-  const taskText = inputField.value.trim(); // Trim whitespace
-  if (taskText) { // Check if task is not empty
+  const taskText = inputField.value.trim(); 
+  if (taskText) { // chequear que no este vacio
     const newTask = document.createElement('li');
     newTask.classList.add('tarea');
 
@@ -55,9 +55,9 @@ function addTask() {
     });
 
     taskList.appendChild(newTask);
-    inputField.value = ''; // VACIAR INPUT AL FINAL
+    inputField.value = ''; // VACIO 
   } else {
-    alert('Please enter a task!');
+    alert('Ingresa una tarea!');
   }
 }
 
