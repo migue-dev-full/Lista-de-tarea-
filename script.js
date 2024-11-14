@@ -57,7 +57,7 @@ function addTask() {
     taskList.appendChild(newTask);
     inputField.value = ''; // VACIO 
   } else {
-    alert('Ingresa una tarea!');
+    alert('La descripcion no puede estar vacio');
   }
 }
 
